@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  font-family: myFont;
+}
+
+a {
+  color: #00B7FF;
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Vollkorn");
+  font-family: myFont;
+}
+
+.header-text {
+  font-size: 220px;
+  padding-top: 1.4em;
+  margin-left: 0.35em;
+}
+@media (max-width: 1000px) {
+  .header-text{
+    font-size: 100px;
+    padding-top: 4em;
+    margin-left: 0.35em;
+  }
+  .sub-header{
+    font-size: 18px;
+  }
+  .contact-style{
+    margin:0 !important;
+  }
+  .project3{
+    margin-top: 15em;
+    margin-right: 2em;
+  }
+  .project4, .project5 {
+    margin-top: 3em;
+  }
+}
+.bg-img::after {
+  content: "";
+  background: linear-gradient(rgba(135,169,169, 0.5), rgba(211, 221, 237, 0.1), rgba(141, 124, 173, 0.7), rgba(140,106,188, 0.9)) no-repeat center fixed, url("/img/header.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  height: 67em;
+  background-size: cover;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+#projects {
+  margin-top: 27em;
+  padding: 5em 0;
+}
+.image1, .image2 {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.overlay1{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, 150%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text1 {
+  font-size: 30px;
+  padding: 7px 14px;
+}
+.text2 {
+  font-size: 20px;
+  padding: 7px 14px;
+}
+#text3 {
+  font-size: 26px;
+  padding: 7px 14px;
+}
+.container1:hover .overlay1, .container2:hover .overlay2 {
+  opacity: 1;
+}
+
+.container1:hover .image1, .container2:hover .image2 {
+  opacity: 0.2;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
